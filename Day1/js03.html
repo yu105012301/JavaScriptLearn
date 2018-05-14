@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js方法</title>
+</head>
+
+<body>
+    <script>
+        //方法，就是在属性当中的函数
+
+        //定义  myfunc
+        var myFunc = function () {
+            console.log('myFunc');
+        }
+
+        
+        var student = {
+            match: 100,
+            chinese: 120,
+            english: 80,
+            getTotal: function () {
+                return this.match + this.chinese + this.english
+            },
+            testFunc : myFunc()
+        }
+
+        alert(student.getTotal());
+        student.testFunc;
+    </script>
+</body>
+
+</html>
